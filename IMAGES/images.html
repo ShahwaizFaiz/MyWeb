@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(0,35,36,0.32), rgba(73,121,9,1), rgba(0,212,255,1));
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        button {
+            background-color: greenyellow;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: limegreen;
+            transform: scale(1.05);
+        }
+
+        button > a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .img-container1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            margin: 5px;
+            width: 30%;
+            border-radius: 10%;
+            border: 1px solid black;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container1">
+        <img src="/IMAGES/download (1).jfif" alt="Description of image 1">
+        <img src="/IMAGES/download (2).jfif" alt="Description of image 2">
+        <img src="/IMAGES/download (3).jfif" alt="Description of image 3">
+        <img src="/IMAGES/download (4).jfif" alt="Description of image 4">
+        <img src="/IMAGES/download (5).jfif" alt="Description of image 5">
+    </div>
+    <div class="btn-1">
+        <button><a href="/index.html">Home</a></button>
+    </div>
+</body>
+</html>
